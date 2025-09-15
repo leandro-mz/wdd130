@@ -1,3 +1,21 @@
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 30rem;
+    margin: 0rem;
+    padding: 0rem;
+    background-color: #d9e3e8;
+    color: hsla(200,0%,0%,.7);
+    text-align: left
+}
+aside img{
+    width: 300px;
+    height: auto;
+}
+
+
 nav {
     color: white;
     background-color: darkblue;
@@ -15,8 +33,8 @@ h1 {
     color: darkblue;
 }
 
-img {
-    width: 150px;
+main img {
+    width: 200px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -24,6 +42,14 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid black;
+    text-align: center;
+
 
 }
