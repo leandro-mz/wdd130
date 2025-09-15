@@ -4,15 +4,18 @@ main {
 
 aside {
     width: 30rem;
-    margin: 0rem;
-    padding: 0rem;
+    margin: 1rem;
+    padding: 1rem;
     background-color: #d9e3e8;
     color: hsla(200,0%,0%,.7);
     text-align: left
 }
 aside img{
-    width: 300px;
+    width: 200px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 
@@ -48,7 +51,7 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid black;
+    border-top:  solid black;
     text-align: center;
 
 
