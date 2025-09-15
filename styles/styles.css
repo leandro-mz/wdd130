@@ -6,6 +6,7 @@ aside {
     width: 30rem;
     margin: 1rem;
     padding: 1rem;
+    border: 1px solid black;
     background-color: #d9e3e8;
     color: hsla(200,0%,0%,.7);
 }
