@@ -2,7 +2,7 @@
     --primary-color: #055a05;
     --secondary-color: #2a5d67;
     --accent1-color: #d97706;
-    --accent2-color: #f1f5f9;
+    --accent2-color: #e2e6eb;
     --heading-font: "Rock Salt", "Ubuntu", sans-serif;
     --body-font: "Roboto", "Open Sans", Helvetica, sans-serif;
 }
@@ -16,6 +16,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: var;
 }
 
 header,
@@ -53,7 +54,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -64,7 +65,7 @@ h1 {
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
     top: 315px;
     padding: 1rem;
