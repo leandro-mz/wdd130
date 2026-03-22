@@ -75,6 +75,10 @@ article {
     color: #ffffff;
 }
 
+.hero article h2 {
+    color: #ffffff;
+}
+
 .hero article img {
     float: right;
     width: 125px;
