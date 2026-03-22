@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #2a5d67;
-    --accent1-color: #d97706;
-    --accent2-color: #e2e6eb;
+    --primary-color: #0d440d;
+    --secondary-color: #1a4049;
+    --accent1-color: #a35200;
+    --accent2-color: #f8fafc;
     --heading-font: "Rock Salt", "Ubuntu", sans-serif;
     --body-font: "Roboto", "Open Sans", Helvetica, sans-serif;
 }
@@ -15,8 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: var(--accent2-color);
+    color: #333 background-color: var(--accent2-color);
 }
 
 header,
@@ -62,7 +61,7 @@ article {
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent1-color);
-    color: #000;
+    color: #ffffff;
 }
 
 .hero article {
@@ -72,6 +71,7 @@ article {
     text-align: center;
     background-color: var(--secondary-color);
     margin-left: 120px;
+    color: #ffffff;
 }
 
 .hero article img {
