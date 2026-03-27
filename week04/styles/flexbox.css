@@ -1,32 +1,22 @@
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 1rem;
-}
-
-.flex-container {
-    border: 3px dashed darkcyan;
-    background-color: lightyellow;
+/* Configuramos al Padre */
+.contenedor-padre {
     display: flex;
-    flex-wrap: wrap;
+    /* Activamos Flexbox */
+    justify-content: space-between;
+    /* Empuja el logo a la izquierda y los enlaces a la derecha */
+    align-items: center;
+    /* Centra todo verticalmente */
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: white;
 }
 
-.flex-item {
-    width: 250px;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 20%);
-    padding: 0.5rem;
-    background-color: #bbb;
-    color: #333;
-}
-
-.item1 {
-    min-height: 100px;
-}
-
-.item2 {
-    min-height: 200px;
-}
-
-.item3 {
-    min-height: 300px;
+/* Configuramos a los Hijos (que también pueden ser padres) */
+.enlaces-hijos {
+    display: flex;
+    /* ¡Flexbox dentro de Flexbox! */
+    justify-content: space-between;
+    /* Crea espacio entre los botones */
+    list-style: none;
+    /* Quita los puntitos de la lista */
 }
