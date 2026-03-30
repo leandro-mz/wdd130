@@ -130,6 +130,7 @@ nav ul li a:hover {
 .history-section img {
     height: 125px;
     width: auto;
+    border-radius: 8px;
 }
 
 .history-section div {
