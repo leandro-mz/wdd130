@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD | HTML Form - User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>WDD | HTML Form - User Poll</h1>
+    </head>
+
+    <main>
+        <form action="#">
+            <fieldset class="fieldset-one">
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email</label>
+                    <input type="email" name="useremail" id="useremail" required>
+                </div>
+
+
+            </fieldset>
+
+            <fieldset class="fieldset-two">
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="1">Chrome</option>
+                        <option value="2">Opera</option>
+                        <option value="3">Microsoft Edge</option>
+                    </select>
+                </div>
+
+                <p>Do you have a household pet?</p>
+                <div class="form-item flex-item">
+                    <label for="no">
+                        <input type="radio" name="pet" id="no" value="no">No
+                    </label>
+
+                    <label for="yes"><input type="radio" name="pet" id="yes" value="yes">Yes</label>
+                </div>
+
+
+                <div>
+                    <label for="feedback">List the places you have lived</label>
+                    <textarea name="feedback" id="feedback" rows="4"
+                      placeholder="Peru, Uruguay, Nigeria"></textarea>
+                </div>
+
+            </fieldset>
+
+            <button type="submit">Submit Poll</button>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <p>&copy;2026 | HTML Form - User Poll Activity | Leandro Mancuso </p>
+    </footer>
+
+</body>
+
+</html>
