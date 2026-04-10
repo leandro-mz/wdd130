@@ -19,6 +19,11 @@ body {
     background-color: var(--accent2-color);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 header,
 main,
 footer {
@@ -32,9 +37,96 @@ h2 {
     color: var(--primary-color);
 }
 
-.socialmedia a {
+/*Header*/
+
+header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 130px;
+    align-items: center;
+    background-color: #e2e8f0;
+}
+
+header nav {
+    margin: 0;
+}
+
+header img {
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+.main-contact {
+    background-color: #f1f5f9;
+}
+
+.main-contact h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+.contact-info address {
+    font-style: normal;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+.company-name {
+    display: block;
+    font-size: 1.2rem;
+    color: #424242;
+    font-weight: bold;
+}
+
+.contact-info address a {
     text-decoration: none;
 }
+
+.contact-info address a:hover {
+    color: var(--primary-color);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.grid-layout iframe {
+    border-radius: 10px;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 8px 20px rgba(26, 64, 73, 0.2);
+    margin: 0 auto;
+}
+
+/*Hero Section*/
 
 .hero {
     position: relative;
@@ -78,47 +170,7 @@ h2 {
     width: 125px;
 }
 
-footer img {
-    width: 100px;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    height: 130px;
-    align-items: center;
-    background-color: #e2e8f0;
-}
-
-header nav {
-    margin: 0;
-}
-
-header img {
-    display: block;
-    height: 100px;
-    margin: 0 auto;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: var(--accent1-color);
-    text-decoration: underline;
-}
+/*History Section*/
 
 .history-section {
     display: grid;
@@ -141,6 +193,8 @@ nav ul li a:hover {
 .history-section div h2 {
     margin: 0;
 }
+
+/*Adventure Section*/
 
 .adventures-section {
     background-color: #e2e8f0;
@@ -174,6 +228,120 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
+/*Formulario*/
+
+.contact-form {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-item.flex-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.form-item:not(.flex-item) label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: 2px solid var(--secondary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--accent1-color);
+    padding: 0 10px;
+}
+
+button {
+    margin: 0 auto;
+    background-color: var(--accent1-color);
+    color: #f0f0f0;
+    display: block;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: #e6e2e2;
+}
+
+/*Employees Section*/
+
+.employees {
+    background-color: #e2e8f0;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.employees-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.employees-container figure {
+    margin: 0;
+    text-align: center;
+}
+
+.employees-container img {
+    width: 70%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.employees-container figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/*Footer*/
+
 footer {
     display: flex;
     align-items: center;
@@ -182,11 +350,19 @@ footer {
     color: var(--accent2-color);
 }
 
+footer img {
+    width: 100px;
+}
+
 footer p {
     flex: 1;
     text-align: center;
     margin: 0;
     padding-left: 170px;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia {
