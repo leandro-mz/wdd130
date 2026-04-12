@@ -24,12 +24,11 @@ main {
     flex-direction: column;
 }
 
-header,
-main,
+/*header,
 footer {
     width: 840px;
     margin: 0 auto;
-}
+}*/
 
 h1,
 h2 {
@@ -170,6 +169,167 @@ nav ul li a:hover {
     width: 125px;
 }
 
+/*Index Hero Section*/
+#hero {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#hero-box {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#hero-msg {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    padding: 20px;
+    z-index: 2;
+}
+
+#hero-msg h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: var(--body-font);
+}
+
+#hero-msg h4 {
+    font-family: var(--body-font);
+    color: #fcdf3e;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.home-title {
+    text-align: center;
+}
+
+.button-box {
+    padding: 10px;
+}
+
+.cta-button {
+    background-color: #d9a066;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b88655;
+}
+
+.cta-button {}
+
+/*Newsletter Section*/
+
+input,
+label {
+    font-size: 1rem;
+    margin: 5px 0;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    background-color: #265e6b;
+    padding: 50px 0;
+}
+
+.river-box {
+    grid-column: 2/8;
+    grid-row: 1;
+    max-width: 640px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.river-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.news-form {
+    grid-column: 6/10;
+    grid-row: 1;
+    z-index: 5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.news-form form fieldset {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.news-form form button {
+    background-color: var(--accent1-color);
+    color: #f0f0f0;
+    display: block;
+    font-size: 1rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.news-form form button:hover {
+    background-color: #100c49;
+    color: #e6e2e2;
+}
+
+.new-title {
+    font-size: 1.25rem;
+    text-align: center;
+
+}
+
 /*History Section*/
 
 .history-section {
@@ -290,7 +450,7 @@ legend {
     padding: 0 10px;
 }
 
-button {
+.button-form {
     margin: 0 auto;
     background-color: var(--accent1-color);
     color: #f0f0f0;
@@ -301,7 +461,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button-form:hover {
     background-color: var(--secondary-color);
     color: #e6e2e2;
 }
