@@ -40,7 +40,7 @@ h2 {
 
 header {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 20% 80%;
     height: 130px;
     align-items: center;
     background-color: #e2e8f0;
@@ -53,15 +53,14 @@ header nav {
 header img {
     display: block;
     height: 100px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     list-style: none;
-    gap: 20px;
+    gap: 10px;
 }
 
 nav ul li a {
@@ -150,7 +149,8 @@ nav ul li a:hover {
 
 .hero article {
     position: absolute;
-    top: 315px;
+    top: 600px;
+    left: 270px;
     padding: 1rem;
     max-height: 200px;
     overflow-y: auto;
@@ -202,7 +202,7 @@ nav ul li a:hover {
 #hero-msg {
     position: absolute;
     top: 100px;
-    left: 500px;
+    left: 460px;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid white;
     padding: 20px;
@@ -247,7 +247,157 @@ nav ul li a:hover {
     background-color: #b88655;
 }
 
-.cta-button {}
+/*Trips Section*/
+
+.cta-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-river img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.cta-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    width: 90%;
+}
+
+.cta-text h2 {
+    color: #ffffff;
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin: 0;
+    font-family: var(--body-font);
+}
+
+.cta-text p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: var(--body-font);
+}
+
+.cta-section {
+    background-color: #f3f3f3;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-text-trips p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 1.25rem;
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #d9a375;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+    font-family: var(--body-font);
+}
+
+.cta-button:hover {
+    background-color: #c28e64;
+    transform: scale(1.05);
+}
+
+/*Trips Section*/
+
+.trip-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trip-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-card h3 {
+    padding: 20px 10px 10px 10px;
+    font-family: var(--body-font);
+    color: #265e6b;
+}
+
+.trip-card p {
+    padding: 0 20px 30px 20px;
+    font-family: var(--body-font);
+    line-height: 1.5;
+    color: #444;
+}
+
+/*Table Section*/
+.table-container {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: var(--body-font);
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 /*Newsletter Section*/
 
@@ -328,6 +478,70 @@ label {
     font-size: 1.25rem;
     text-align: center;
 
+}
+
+/*Home Grid*/
+
+.home-grid-container {
+    width: 100%;
+    background-color: var(--accent2-color);
+    padding: 60px 0;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3.125rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.grid-text {
+    padding: 20px;
+}
+
+.grid-text h2 {
+    color: #265e6b;
+    margin-bottom: 10px;
+}
+
+.safety-text,
+.fishing-text p {
+    font-family: var(--body-font);
+    font-size: 1.20rem;
+
+}
+
+.button-box-fishing {
+    padding-top: 20px;
+
+}
+
+.cta-button-fishing {
+    background-color: #d9a066;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b88655;
 }
 
 /*History Section*/
@@ -518,7 +732,7 @@ footer p {
     flex: 1;
     text-align: center;
     margin: 0;
-    padding-left: 170px;
+    justify-content: space-between;
 }
 
 .socialmedia a {
