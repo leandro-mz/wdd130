@@ -719,9 +719,10 @@ legend {
 footer {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 20px 40px;
     background-color: var(--secondary-color);
     color: var(--accent2-color);
+    justify-content: space-between;
 }
 
 footer img {
@@ -732,7 +733,6 @@ footer p {
     flex: 1;
     text-align: center;
     margin: 0;
-    justify-content: space-between;
 }
 
 .socialmedia a {
